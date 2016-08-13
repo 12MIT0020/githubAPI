@@ -1,5 +1,7 @@
 <?php
 //class loader
+echo 'hi';
+exit;
 require_once 'githubAPI/class-loader-master/ClassLoader.php';
 
 use Symfony\Component\ClassLoader\ClassLoader;
