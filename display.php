@@ -61,13 +61,15 @@
 					if (xhttp.readyState == 4 && xhttp.status == 200) {
 					  //document.getElementById("demo").innerHTML = xhttp.responseText;
 					  Rawdata = xhttp.responseText;
-					  console.log (Rawdata);
+					  //console.log (Rawdata);
 					  data = JSON.parse(Rawdata);
 					  CalculateOpenIssue(data);
 					}
 				  };
 				  xhttp.open("POST", "githubAPI/request_by_api.php", true);
-				  xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+				 // xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+				 // application/json
+				xhttp.setRequestHeader("Content-type", "application/json");
 				  xhttp.send("url="+url);	
 			}
 			
