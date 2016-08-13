@@ -65,7 +65,7 @@
 					  CalculateOpenIssue(data);
 					}
 				  };
-				  xhttp.open("POST", "request_by_api.php", true);
+				  xhttp.open("POST", "githubAPI/request_by_api.php", true);
 				  xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 				  xhttp.send("url="+url);	
 			}
