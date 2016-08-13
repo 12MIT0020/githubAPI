@@ -1,8 +1,6 @@
 <?php
 //class loader
-echo 'hi';
-exit;
-require_once 'githubAPI/class-loader-master/ClassLoader.php';
+require_once 'class-loader-master/ClassLoader.php';
 
 use Symfony\Component\ClassLoader\ClassLoader;
 
@@ -17,12 +15,12 @@ $loader->register();
 
 
 //include Request API
-include('githubAPI\Requests\library\Requests.php');
+include('Requests\library\Requests.php');
 
 Requests::register_autoloader();
 
 $url = isset($_REQUEST['url'])?$_REQUEST['url']:'';
-echo $url."divya"; 
+//echo $url."divya"; 
 
 //request to github
 $response = Requests::get($url);
