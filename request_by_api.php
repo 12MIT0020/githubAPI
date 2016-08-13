@@ -26,5 +26,4 @@ $response = Requests::get($url);
 
 echo $response->body; 
 
-
 ?>
