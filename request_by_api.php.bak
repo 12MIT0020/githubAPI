@@ -15,7 +15,7 @@ $loader->register();
 
 
 //include Request API
-include('Requests\library\Requests.php');
+include('githubAPI\Requests\library\Requests.php');
 
 Requests::register_autoloader();
 

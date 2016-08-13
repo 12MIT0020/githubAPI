@@ -20,6 +20,7 @@ include('githubAPI\Requests\library\Requests.php');
 Requests::register_autoloader();
 
 $url = isset($_REQUEST['url'])?$_REQUEST['url']:'';
+echo $url."divya"; 
 
 //request to github
 $response = Requests::get($url);
