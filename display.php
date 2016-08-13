@@ -61,6 +61,7 @@
 					if (xhttp.readyState == 4 && xhttp.status == 200) {
 					  //document.getElementById("demo").innerHTML = xhttp.responseText;
 					  Rawdata = xhttp.responseText;
+					  console.log (Rawdata);
 					  data = JSON.parse(Rawdata);
 					  CalculateOpenIssue(data);
 					}
